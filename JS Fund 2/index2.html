@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> JS Fundamentals 2</title>
+	<script type="text/javascript">
+		var Person = {
+	name: "Rachael",
+	distance_traveled: 0,
+	say_name: function hello() {
+			alert(Person.name);
+		},
+	say_something: function speak(p) {
+					console_log(name + "says "+p);
+				},
+	walk: function walk(){
+		alert(Person.name + " is walking.");
+		Person.distance_traveled += 3;
+	},
+	run: function run(){
+		alert(Person.name + " is running.");
+		Person.distance_traveled += 10;
+	},
+	crawl: function crawl(){
+		alert(Person.name + " is crawling");
+		Person.distance_traveled += 1;
+	}
+};
+console.log(Person);
+
+var talk = Person.say_name();
+var crawl = Person.crawl();
+var run = Person.run();
+var crawl = Person.crawl();
+console.log(Person.distance_traveled);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
