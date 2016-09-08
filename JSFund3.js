@@ -26,6 +26,7 @@ function personConstructor(name){
 
 }
 //these could probably all be anonymous functions, but I was taught to avoid those.
+// Correct! These would work fine as anonymous functions, but it's fine practice to name all your fuctions
 
 function ninjaConstructor(name, cohort){
 	var ninja = {
@@ -50,3 +51,11 @@ function ninjaConstructor(name, cohort){
 
 console.log(personConstructor("Babs"));
 console.log(ninjaConstructor("Babs", "September 2016"));
+
+/*
+What happens when you run the following in node (rather than the browser)?
+
+personConstructor("Babs").say_name();
+
+I.e. what's the difference between alert and console.log?
+*/
